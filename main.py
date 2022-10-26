@@ -2,7 +2,7 @@ import requests
 from contextlib import suppress
 
 EXTERNAL_V4_API = "https://ident.me/"
-EXTERnAL_V6_API = "https://v6.ident.me"
+EXTERNAL_V6_API = "https://v6.ident.me"
 
 resp = requests.get(EXTERNAL_V4_API)
 external_v4 = resp.content.decode("utf8") #To remove binary string
