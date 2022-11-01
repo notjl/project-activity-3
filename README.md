@@ -2,9 +2,9 @@
 Group 4
 CPE028 - CPE41S1
 
-Alapad, Jerome Christian
-Cabezas, Angel Gabriel
-Paras, Jan Angelo
+Alapad, Jerome Christian |
+Cabezas, Angel Gabriel |
+Paras, Jan Angelo |
 Ramos, Kierwin Jov
 
 IP Information Retriever
