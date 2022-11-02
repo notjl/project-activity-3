@@ -25,3 +25,4 @@ Updates:
 - Implemented CI/CD
 - Added backlog features
 (Google Maps API implementaion)
+Recording Link: https://drive.google.com/file/d/1-Crta0QQQ3a5maa30yhwj8opZGH4RApK/view?usp=share_link
