@@ -1,4 +1,5 @@
 import requests
+import webbrowser
 from contextlib import suppress
 
 EXTERNAL_V4_API = "https://ident.me/"
@@ -30,3 +31,6 @@ print(f"Autonomous System Number:\t{geolocation_deets['asn']}")
 print(f"Country Code:\t\t\t{geolocation_deets['country_code']}")
 print(f"Latitude / Longitude:\t\t{geolocation_deets['latitude']}, {geolocation_deets['longitude']}")
 print("=" * 50)
+
+# Open Google Maps to look at Geo-Location details.
+webbrowser.open(f"https://www.google.com/maps/search/?api=1&query={geolocation_deets['latitude']}, {geolocation_deets['longitude']}", new=2)
