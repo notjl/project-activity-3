@@ -4,18 +4,18 @@ from contextlib import suppress
 EXTERNAL_V4_API = "https://ident.me/"
 EXTERNAL_V6_API = "https://v6.ident.me"
 
-resp = requests.get(EXTERNAL_V4_API)
-external_v4 = resp.content.decode("utf8") #To remove binary string
+resp_v4 = requests.get(EXTERNAL_V4_API)
+external_v4 = resp_v4.content.decode("utf8") #To remove binary string
 
 # Try the v6 API endpoint
 with suppress(Exception):
     resp_v6 = requests.get(EXTERNAL_V6_API)
-    external_v6 = resp.content.decode("utf8")
+    external_v6 = resp_v6.content.decode("utf8")
 
 GEOLOCATION_API = f"https://ipapi.co/{external_v4}/json" #Getting the API Response
 
-resp = requests.get(GEOLOCATION_API)
-geolocation_deets = resp.json() #Converting into .json file 
+resp_geo = requests.get(GEOLOCATION_API)
+geolocation_deets = resp_geo.json() #Converting into .json file 
 
 #Printing API Response
 print("=" * 50)
