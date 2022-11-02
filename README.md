@@ -13,9 +13,15 @@ This application utilizes API from
 ident.me to retrieve IP information
 from the user's machine and ipapi.com for Geolocation. 
 
-These inforamtion includes:
+These information includes:
 - IPv4 Address
 - Internet Service Provider
 - Autonomous System Number
 - Country code
 - Geolocation
+
+# Project Activity 4
+Updates:
+- Implemented CI/CD
+- Added backlog features
+(Google Maps API implementaion)
